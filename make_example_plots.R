@@ -3,6 +3,7 @@ library(naniar)
 library(palmerpenguins)
 
 #exploratory plot
+
 vis_miss(penguins_raw) + 
   theme(axis.text.x = element_text(angle = 90),
         text = element_text(size = 15))
@@ -209,7 +210,7 @@ penguins %>%
     fill = "Sex"
   ) +
   theme_bw() +
-  geom_hline(color = 'darkgray', yintercept = 50, linetype = "dashed", size =1.5) +
+  geom_hline(color = "#FDE725FF", yintercept = 50, linetype = "dashed", size =2) +
   scale_fill_viridis_d(end = 0.6)
   
 # Ridgeline 
